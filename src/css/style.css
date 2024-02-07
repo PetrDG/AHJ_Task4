@@ -1,0 +1,48 @@
+.popover-container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popover {
+    width: 320px;
+    border: 1px solid green;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+}
+
+.popover::before, .popover::after {
+    content: ''; 
+    position: absolute;
+    left: 150px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid green;
+}
+
+.popover::after {
+    border-top: 10px solid white;
+    bottom: -19px; 
+}
+
+.popover-title {
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(188, 186, 186);
+}
+
+.popover-text {
+    padding: 5px;
+}
+
+.popover-btn {
+    padding: 5px;
+    color: white;
+    background-color: rgb(186, 35, 35);
+    font-size: 24px;
+    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
